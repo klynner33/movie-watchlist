@@ -97,7 +97,7 @@ main {
 .search-results {
   display: none;
   padding: 30px;
-  max-width: 600px;
+  max-width: 700px;
   margin: auto;
 }
 
@@ -107,6 +107,15 @@ main {
     align-items: center;
     padding: 30px;
     gap: 30px;
+}
+
+.movie-poster {
+    max-width: 150px;
+    height: auto;
+}
+
+.movie-title {
+    font-size: 18px;
 }
 
 .title-rating {
