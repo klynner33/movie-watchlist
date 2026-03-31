@@ -29,10 +29,12 @@ header h1 {
   font-size: 42px;
 }
 
-header p {
+header a {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  text-decoration: none;
+  color: white;
 }
 
 main {
@@ -90,4 +92,49 @@ main {
   justify-content: center;
   align-items: center;
   height: calc(100vh - 210px);
+}
+
+.search-results {
+  display: none;
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.movie-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+}
+
+.title-rating {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.star-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.time-genre-addtolist {
+    display: flex;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.addto-watchlist-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.movie-recap p {
+    font-size: 14px;
+    line-height: 20px;
 }
