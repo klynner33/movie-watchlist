@@ -103,9 +103,8 @@ header a:focus-visible {
 }
 
 .start-exploring-icon {
-  width: 72px;
+  width: 150px;
   height: auto;
-  opacity: 0.45;
 }
 
 .search-results {
@@ -132,6 +131,7 @@ header a:focus-visible {
 }
 
 .movie-poster-container {
+  position: relative;
   width: 150px;
   aspect-ratio: 2 / 3;
   flex-shrink: 0;
@@ -145,6 +145,14 @@ header a:focus-visible {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.movie-poster-placeholder {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 3px;
+  background: #1e1e1e;
 }
 
 .movie-title {
@@ -170,15 +178,19 @@ header a:focus-visible {
   align-items: center;
 }
 
-.addto-watchlist-link {
+.watchlist-action-btn {
   display: flex;
   align-items: center;
   gap: 5px;
-  text-decoration: none;
-  color: white;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: #ffffff;
+  cursor: pointer;
 }
 
-.addto-watchlist-link p {
+.watchlist-action-btn span {
   margin: 0;
 }
 
@@ -193,4 +205,12 @@ header a:focus-visible {
   padding: 2rem;
   color: #a5a5a5;
   text-align: center;
+}
+
+.watchlist-page--filled {
+  text-align: left;
+}
+
+.watchlist-page--filled .search-results {
+  padding-top: 0;
 }
